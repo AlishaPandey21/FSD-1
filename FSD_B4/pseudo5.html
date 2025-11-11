@@ -1,0 +1,27 @@
+<head>
+    <style>
+       .Container{display: flex; 
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:stretch ;
+        flex-wrap: wrap;
+        gap:10px;
+        padding:20px ;
+         height:500px;
+          background-color:rgb(27, 196, 83) }
+       .a{background-color: blue;
+        text-align:center ;
+        width:200px;
+        padding: 20px}
+        .a:nth-child(2)
+        {order:1px;
+        flex:1 1 100px}
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="a">Box A</div>
+        <div class="a">Box B</div>
+        <div class="a">Box C</div>
+        </div>
+        </body>

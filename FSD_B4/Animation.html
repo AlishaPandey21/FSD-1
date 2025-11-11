@@ -1,0 +1,58 @@
+ <!-- <head>
+    <style>
+        @keyframes abc{
+            from{background-color:tomato}
+            to{background-color:purple}
+        }
+        div{
+            background-color:pink;
+            height: 300px;
+            width: 200px;
+            animation-name: abc;
+            animation-duration: 10s;
+            animation-delay: 0s;
+            animation-timing-function: ease;
+        }
+    </style>
+</head>
+<body>
+    <div> </div>
+</body>  -->
+
+
+<head>
+    <style>
+        @keyframes abc{
+        0%{background-color: brown;top:0px;left:0px}
+        25%{background-color: rgb(26, 3, 41);top:0px;left:25px};
+        50%
+        {background-color: rgb(9, 129, 177);
+        top:0px;left:50px;
+        }
+        75%
+        {background-color: rgb(41, 3, 38);
+        top:0px;left:75px;
+        }
+
+        100%
+        {background-color: pink;
+        top:0px;left:100px}
+        }
+        div{
+            position: relative;
+            background-color:pink;
+            height: 300px;
+            width: 200px;
+            animation-name: abc;
+            animation-duration: 10s;
+            animation-delay: 0s;
+            animation-timing-function: ease;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+
+        }
+    </style>
+</head>
+<body>
+    <div> </div>
+</body> 
