@@ -1,0 +1,36 @@
+<!-- write a jd to validate user and password
+password length should be 6-12 char 
+username should not start with _,@,any number also check both field must not be blank -->
+
+
+Username: <input type="text" id="a">
+pass: <input type="password" id="b">
+<input type="submit" onclick="fun()">
+<script>
+function fun()
+{
+    pat=/^_|^@|^\d/
+    Email=/^\w+([.-]?\w+)*@\w+([.]?\w)*(\.\w{2,3})+$/
+    Email1=/^\w+@\w+(\.\w{2,3})+$/
+    u=document.getElementById('b').value
+    u1=document.getElementById('a').value
+    if(u.length==0 || u1.length==0)
+{
+    alert('Can not be BlANK')
+}
+    else if(u.length<6|| u.length>12)
+{
+    alert('Password Must be 6 to 12 digit')
+}
+  else if(pat.test(u1))
+{
+    alert('Enter Valid Username')
+}
+ else 
+{
+    alert('perfect')
+}
+ 
+   
+}
+</script>

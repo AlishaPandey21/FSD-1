@@ -1,0 +1,22 @@
+<script>
+    let order=new Promise((resolve,reject)=>
+{
+    // let success=true;
+    let success='false11'
+    setTimeout(()=>
+{
+    if(success)
+{
+    resolve('order Complete')
+}
+else
+{
+    reject('order Failed')
+}
+},2000)
+})
+order.then(result=>console.log(result)).catch(error=>console.log(error)).finally(()=>console.log("Process Finish"))
+
+
+
+</script>

@@ -1,0 +1,35 @@
+<input type="text" id="a">
+<input type="submit" onclick="fun()">
+<script>
+    function fun(){
+        // pat=/abc/
+        // pat=/abc/i
+       // pat=/ABC+/
+        //  pat=/ABC?/
+       // pat=/\w/
+
+    //   pat=/[abc]/,/[^abc]/,/[0-9]/
+    // pat=(2),(2,),(3,8)
+    pat=/(3,8)/
+     pat=/^\d{3,8}$/
+
+
+
+
+        
+        u=document.getElementById('a').value
+        if(pat.test(u))
+    {
+        alert('perfect')
+    }
+    else
+    {
+        alert('Not Perfect')
+    }
+
+
+    }
+</script>
+
+
+

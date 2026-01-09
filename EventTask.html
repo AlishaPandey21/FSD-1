@@ -1,0 +1,16 @@
+ 
+
+
+
+<form>
+    <input type="text" id="a">
+    </form>
+    <script>
+
+        let input=document.querySelector('#a')
+        input.addEventListener('keydown',e=>{
+            if(isNaN(e.key))
+            {
+           e.preventDefault()
+        }})
+    </script>

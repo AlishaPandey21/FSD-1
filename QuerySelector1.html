@@ -1,0 +1,24 @@
+<!-- <p id="a"></p>
+<script>
+    document.getElementById('a').innerHTML="<b>Hello</b>"
+     document.getElementById('a').innerText="<b>Hello</b>"
+</script> -->
+
+
+
+<!-- Task DOM -->
+<p id="a">Hello</p>
+<script>
+    function f()
+    {
+    document.getElementById('a').style.textTransform="uppercase"
+    }
+     function f1()
+    {
+    document.getElementById('a').style.textTransform="lowercase"
+    }
+</script>
+<body>
+    <input type="button" value="UpperCase" onclick="f()" >
+     <input type="button" value="LowerCase" onclick="f1()" >
+</body>

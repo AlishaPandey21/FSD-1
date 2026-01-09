@@ -1,0 +1,19 @@
+ <head>
+ <img id="1">
+<script>
+    function f()
+    {
+        document.getElementById("1").setAttribute("src","download.jfif")
+    }
+    </script>
+    <body>
+        <input type="button" value="img" onclick="f()" >
+    </body> 
+
+    <p id="p1" title="Demo text">Hello</p>
+    <script>
+        document.getElementById("p1").removeAttribute("title")// gives null
+        alert(document.getElementById("p1").getAttribute("title"))
+    </script>
+ </head>
+    

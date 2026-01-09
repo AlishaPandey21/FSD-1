@@ -1,0 +1,25 @@
+<!-- Design a Form with full validation on password
+min length of pass is of 8 letters ,it must have some special characters -->
+
+
+<input type="text" id="a">
+<input type="submit" onclick="fun()">
+<script>
+function fun()
+{
+    pat=/\W/
+    u=document.getElementById('a').value
+    if(u.length<8)
+{
+    alert('Password Must be 8 digit')
+}
+    else if(pat.test(u)==0)
+{
+    alert('Must Contain Special Char')
+}
+    else
+{
+    alert('perfect')
+}
+}
+</script>

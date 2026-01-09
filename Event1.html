@@ -1,0 +1,49 @@
+    <head>
+        <script>
+            function fun(fname,lname)
+            {
+                document.write("Hello"+fname+" "+lname)
+            }
+        var a=function(a,b)
+        {
+            return a+b
+        }
+        let result=a(5,10)
+        document.write("Answer is ",result)
+        //Using ES6
+
+        const add=(a,b)=>a+b
+        console.log(add(3,4))
+
+        const square=x=>x*x
+        console.log(square(3))
+
+        const say=()=>"Hello"
+        console.log(say)
+
+        const mul=(a,b)=>
+        {const result=a*b
+            return result
+        }
+        console.log(mul(2,3))
+
+        const newF=(val)=>"Hello"+val;
+        console.log(newF("World"))
+
+        const fun1=p=>`val=${p}`
+        console.log(fun1(30))
+        // use curly bracket when multiple lines are required
+        // whenever you are using curly bracket then return keyword is must 
+
+        const add1=(j,k)=>{'${j+k}'}
+        console.log(`Addition=${add(5,9)}`)
+
+        
+
+
+
+        </script>
+    </head>
+    <body>
+        <input type="button" onClick="fun('ABC','XYZ')" value="clickme">
+    </body>

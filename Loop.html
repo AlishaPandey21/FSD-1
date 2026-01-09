@@ -1,0 +1,80 @@
+<head>
+    <script>
+        // function fun()
+        // {
+        //     if (true)
+        // {
+        //     let a=10
+        // }
+        // console.log(a)
+        // }
+        // fun()
+        for (let i=1;i<=5;i++)
+        {
+            console.log(i)
+        }
+        var emp=["abc","pqr","xyz"]
+        for (let i=0;i<=emp.length;i++)
+        {
+            document.write(emp[i]+"<br>")
+        }
+        var mul=[1,2,3,4,5]
+        for (let i=0;i<=mul.length-1;i++)
+        {
+            mul1=mul[i]*2
+            document.writeln("Multiplication with 2 = ",mul1+"<br>")
+        }
+        let Fruits=["a","b","c"]
+        for (let f of Fruits)
+        {
+            console.log(f)
+        }
+        let user={name:"J", age:25,city:"pune"}
+        for(let key in user)
+        {
+            console.log(key+":"+user[key])
+        }
+        let students=["A","B","C"]
+        for(let i in students)
+        {
+            console.log(i)
+            console.log(students[i])
+        }
+        var i=5
+        for(var i=0;i<2;i++)
+        {
+            console.log(i)
+        }
+        console.log(i)
+        console.log("For Second Loop")
+
+        let i1=5
+        for(let i1=0;i1<2;i1++)
+        {
+            console.log(i1)
+        }
+        console.log(i1)
+        let nums=[1,2,3,4]
+        let square=nums.map(num => num*num)
+        console.log(square)
+
+        let ages=[12,18,25,34]
+        let adult=ages.filter(age=> age>18)
+        console.log(adult)
+
+        let names=["A","B","C"]
+        names.forEach(name=> {console.log("Hello"+name)})
+
+        let colors=["red","green","blue"]
+        console.log(colors.includes("green"))
+        console.log(colors.includes("tomato"))
+
+        let users=[{id:1,name:"A"},{id:2,name:"B"},{id:3,name:"c"}]
+        let u=users.find(u=> u.id===2)
+        console.log(u)
+        console.log(users[2].name)
+
+        
+
+    </script>
+</head>

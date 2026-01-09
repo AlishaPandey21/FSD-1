@@ -1,0 +1,30 @@
+<!-- write a js that includes 1 input field and empty button if field is empty then alert will pop up with text enter something otherwise it may show field's value -->
+
+<body>
+
+    <form name="f1" onsubmit="fun()">
+        Firstname: <input type="text" name="fname" value="" id="a">
+        <!-- Enter A Number:<input type="text" name="f1name" value="" id="b"> -->
+        <input type="submit">
+        
+
+
+    </form>
+    <script>
+      function fun()
+      {
+        a=document.getElementById('a').value
+
+        if (a=="")
+       {
+        alert("Write Something")
+      }
+      else{
+         document.write("Hello "+a)
+        
+      }
+          
+
+      }
+    </script>
+</body>

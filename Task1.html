@@ -1,0 +1,26 @@
+<script>
+    function fun()
+    {
+        document.getElementById('a1').innerHTML="Hello"
+    }
+
+    function fun1(x)
+    {
+       x.innerHTML="Hello"
+    }
+
+    function fun2(x,y)
+    {
+       x.innerHTML=y
+    }
+</script>
+<body>
+<p id="a1" onclick="fun()">Click Me</p> 
+<p id="a1" onclick="fun1(this)">Click Me</p>
+<p id="a1" onclick="fun2(this,'How are you?')">Click Me</p>
+
+<!-- onclick=JS -->
+
+<p onclick="this.innerHTML='Hello'">How are you?</p>
+<div onclick="this.style.color='tomato';this.innerHTML='welcome 2026'">Goodbye 2025</div>
+</body>

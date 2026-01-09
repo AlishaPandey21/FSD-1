@@ -1,0 +1,31 @@
+<img id="1" href="#" src="download.jfif" alt="not found">
+<script>
+    let i=0
+    function f()
+    {
+        
+        if (i%2==0)
+    {
+        document.getElementById('1').setAttribute("src","tiger.jpeg")
+        i=i+1
+    }
+    else
+    {
+        document.getElementById('1').setAttribute("src","download.jfif")
+        i=i+1
+    }
+}
+
+    function f1()
+    {
+        document.getElementById('1').setAttribute("src","tiger.jpeg")
+         document.getElementById('1').setAttribute("height","500px")
+    }
+
+
+    
+</script>
+<body>
+    <input type="button" onclick="f()" value="Change">
+    <input type="button" onclick="f1()" value="Large">
+</body>

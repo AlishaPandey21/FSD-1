@@ -1,0 +1,37 @@
+<head>
+    <script>
+        function warn()
+        {
+            alert('I am Warning')
+            document.write('You Read Warning')
+        }
+       
+
+        function conf()
+        {
+            let result=confirm('Do you Agree?')
+            if(result==true)
+        {
+            document.write("User Agree")
+            return true
+        }
+        else
+        {
+            document.write("User Disagree")
+            return false
+        }
+        }
+
+        function p()
+        {
+            let info=prompt('Enter Name','username')
+            
+            document.write(`welcome ${info}`)
+        }
+    </script>
+</head>
+<body>
+     <input type="button" value="Alert Box" onclick="warn()">
+     <input type="button" value="confirm box" onclick="conf()">
+     <input type="button" value="user i/p" onclick="p()">
+</body>
