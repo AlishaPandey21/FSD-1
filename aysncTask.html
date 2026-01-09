@@ -1,0 +1,29 @@
+write a function that resolves a number after 1 sec use a loop which async away to get values from 1 to 3 print double result of each value
+
+<script>
+    function pn(num)
+    {
+        return new Promise((resolve)=>
+    {
+        setTimeout(()=>
+    {
+        resolve(num*3)
+    },1000)
+    })
+    }
+
+    async function gn()
+    {
+        for(let i=1;i<=3;i++)
+    {
+        let input=prompt('Enter'+i)
+        let number=Number(input)
+        let result=await pn(number)
+        console.log("Triple",result)
+    }
+    }
+    gn()
+</script>
+
+
+
